@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-squid-dark: #070707;
+  --color-squid-surface: #121212;
+  --color-squid-light: #F4F4F5;
+  --color-squid-muted: #A1A1AA;
+  --color-squid-pink: #FF007F;
+  --color-squid-crimson: #E60000;
+  
+  /* Drop Shadows for text/glows */
+  --drop-shadow-glow-pink: 0 0 15px rgba(255, 0, 127, 0.6);
+  --drop-shadow-glow-crimson: 0 0 20px rgba(230, 0, 0, 0.8);
+  
+  /* Box Shadows for glow */
+  --shadow-glow-pink: 0 0 15px rgba(255, 0, 127, 0.5), 0 0 5px rgba(255, 0, 127, 0.3);
+  --shadow-glow-crimson: 0 0 20px rgba(230, 0, 0, 0.6), 0 0 8px rgba(230, 0, 0, 0.4);
+
+  /* Typography / Editorial Sizes */
+  --text-editorial-sm: 0.875rem;
+  --text-editorial-base: 1.125rem;
+  --text-editorial-lg: 1.5rem;
+  --text-editorial-xl: 2.5rem;
+  --text-editorial-2xl: 4rem;
+  --text-editorial-3xl: 6rem;
+  --text-editorial-4xl: 9rem;
+
+  /* Spacing */
+  --spacing-editorial-sm: 1rem;
+  --spacing-editorial-md: 2.5rem;
+  --spacing-editorial-lg: 5rem;
+  --spacing-editorial-xl: 10rem;
+  
+  /* Transitions and Animations */
+  --transition-duration-cinematic: 1.2s;
+  --transition-duration-snappy: 0.3s;
+  --transition-timing-cinematic: cubic-bezier(0.19, 1, 0.22, 1); /* easeOutExpo */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-squid-dark);
+    color: var(--color-squid-light);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.02em; /* Editorial tighter tracking */
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
